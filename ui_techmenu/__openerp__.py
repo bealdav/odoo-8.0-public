@@ -31,7 +31,7 @@ Contact
         """,
     'maintainer': 'Ursa Information Systems',
     'website': 'http://www.ursainfosystems.com',
-    "images" : [],
+    'images': ['static/description/ui_techmenu.png'],
     "depends" : ["base"],
     "init_xml" : [],
 
