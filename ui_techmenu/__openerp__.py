@@ -12,7 +12,7 @@
     "name" : "Explode Technical Menu",
     "version" : "1.8",
     "author" : "Ursa Information Systems",
-    "category" : "User Experience",
+    "category" : "Extra Tools",
     "summary": "Explode Technical Menu out from under Settings (Ursa)",
     'description':
         """
@@ -31,7 +31,7 @@ Contact
         """,
     'maintainer': 'Ursa Information Systems',
     'website': 'http://www.ursainfosystems.com',
-    "images" : [],
+    'images': ['static/description/ui_techmenu.png'],
     "depends" : ["base"],
     "init_xml" : [],
 
