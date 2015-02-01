@@ -1,14 +1,13 @@
-﻿from openerp.osv import osv, fields
+﻿from openerp import models, fields, api
 
-class res_partner(osv.osv):
+class res_partner(models.Model):
 
-    _inherit = "res.partner"
+    _inherit = 'res.partner'
 
-    _columns = {
-        'county_id': fields.many2one("res.country.state.county", 'County'),
-    }
+    county_id = fields.Many2one('res.country.state.county', 'County')
 
-    def _address_fields(self, cr, uid, context=None):
-        address_fields = set(super(res_partner, self)._address_fields(cr, uid, context=context))
+    @api.model
+    def _address_fields(self):
+        address_fields = set(super(res_partner, self)._address_fields())
         address_fields.add('county_id')
         return list(address_fields)
