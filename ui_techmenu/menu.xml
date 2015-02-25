@@ -2,7 +2,7 @@
 <openerp>
     <data>
 
-        <menuitem id="base.menu_custom" name="Technical" parent="" sequence="501" groups="base.group_no_one"/>
+        <menuitem id="base.menu_custom" name="T" parent="" sequence="501" groups="base.group_no_one"/>
 
         <menuitem id="base.menu_email" name="Email" parent="base.menu_custom" sequence="11"/>
 
